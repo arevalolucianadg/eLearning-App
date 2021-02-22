@@ -1,0 +1,40 @@
+{
+  "name": "elearning-app",
+  "version": "1.0.0",
+  "description": "CRUD para plataforma de cursos online",
+  "main": "./src/server.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "dev": "nodemon src/server.js",
+    "start": "node dist/server.js",
+    "build:dev": "babel src --out-dir dist",
+    "build": "npm run clean && npm run build:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arevalolucianadg/eLearning-App.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Luciana Arevalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arevalolucianadg/eLearning-App/issues"
+  },
+  "homepage": "https://github.com/arevalolucianadg/eLearning-App#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.17",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.12.17",
+    "@babel/node": "^7.13.0",
+    "@babel/preset-env": "^7.12.17",
+    "nodemon": "^2.0.7"
+  }
+}
